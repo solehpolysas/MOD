@@ -92,10 +92,24 @@ echo ''
 # End Trade Mark
 echo 'Run patch to rc.local file...'
 sleep 3
-echo 'Starting Patch!...'
 echo '/etc/mssvpn-mod.sh #Run MOD at Start-UP' | tee -a /etc/rc.local
 echo '/etc/mssvpn-mod2.sh #Run MOD2 at Start-UP' | tee -a /etc/rc.local
 echo 'exit 0' | tee -a /etc/rc.local
+clear
+# Trade Mark
+echo '
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| M S S V P N - M O D V.1.2
+ -----------------------------------------------------
+      OpenWRT Patch MOD by MSSVPN t.me/mssvpn_hq
+ -----------------------------------------------------'
+echo ''
+echo ''
+# End Trade Mark
+echo 'Starting Patch!...'
 sleep 3
 clear
 # Trade Mark
@@ -154,6 +168,21 @@ echo '
 echo ''
 echo ''
 # End Trade Mark
+echo 'Setup Cronjob Done!...'
+sleep 3
+# Trade Mark
+echo '
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| M S S V P N - M O D V.1.2
+ -----------------------------------------------------
+      OpenWRT Patch MOD by MSSVPN t.me/mssvpn_hq
+ -----------------------------------------------------'
+echo ''
+echo ''
+# End Trade Mark
 echo 'Patch Cronjob settings...'
 uci set system.@system[0].cronloglevel="9"
 sleep 1
@@ -175,7 +204,7 @@ echo '
 echo ''
 echo ''
 # End Trade Mark
-echo 'Setup Cronjob Done!...'
+echo 'Patch Cronjob Settings Done!...'
 sleep 3
 
 # 4 All Job Done!
