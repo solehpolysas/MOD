@@ -16,7 +16,7 @@ clear
 echo 'Setup patch to run...'
 sleep 3
 echo 'Edit existing rc.local file...'
-sed '$!d' /etc/rc.local
+sed -i '$!d' /etc/rc.local
 sleep 3
 clear
 echo 'Run patch to rc.local file...'
