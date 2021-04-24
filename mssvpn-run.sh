@@ -15,9 +15,18 @@ sleep 3
 clear
 echo 'Setup patch to run...'
 sleep 3
-echo '/etc/mssvpn-mod.sh #Run MOD at Start-UP' | tee -a /etc/rc.local
+echo 'Edit existing rc.local file...'
+sed '$!d' /etc/rc.local
+sleep 3
 clear
-echo 'Setup Done!...'
+echo 'Run patch to rc.local file...'
+sleep 3
+echo 'Starting Patch!...'
+echo '/etc/mssvpn-mod.sh #Run MOD at Start-UP' | tee -a /etc/rc.local
+echo 'exit 0' | tee -a /etc/rc.local
+clear
+sleep 3
+echo 'Setup Patch Done!...'
 sleep 3
 
 # 3 Patch cronjob file
@@ -36,9 +45,9 @@ sleep 2
 clear
 echo 'Patch Cronjob settings...'
 uci set system.@system[0].cronloglevel="9"
-sleep 0.1
+sleep 1
 uci commit system
-sleep 0.1
+sleep 1
 /etc/init.d/cron restart
 sleep 2
 clear
@@ -48,3 +57,5 @@ sleep 3
 # 4 All Job Done!
 clear
 echo 'All job were done - credit to mssvpn MOD'
+echo ''
+echo 'You can reboot router now!'
