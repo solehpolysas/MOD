@@ -2,5 +2,7 @@
 # Modded by MSSVPN contact @mssvpn_hq t.me/mssvpn
 
 date -s 2030-01-01
-sleep 60
+sleep 45
+ifup WG
+sleep 15
 ping -q 8.8.8.8 > /dev/null &
