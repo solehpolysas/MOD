@@ -34,6 +34,14 @@ echo '0 4 * * * /etc/init.d/network restart' | tee -a /etc/crontabs/root
 echo 'Third cron - Done!...'
 sleep 2
 clear
+echo 'Patch Cronjob settings...'
+uci set system.@system[0].cronloglevel="9"
+sleep 0.1
+uci commit system
+sleep 0.1
+/etc/init.d/cron restart
+sleep 2
+clear
 echo 'Setup Cronjob Done!...'
 sleep 3
 
