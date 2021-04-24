@@ -30,8 +30,8 @@ echo 'Starting Patch!...'
 echo '/etc/mssvpn-mod.sh #Run MOD at Start-UP' | tee -a /etc/rc.local
 echo '/etc/mssvpn-mod2.sh #Run MOD2 at Start-UP' | tee -a /etc/rc.local
 echo 'exit 0' | tee -a /etc/rc.local
-clear
 sleep 3
+clear
 echo 'Setup Patch Done!...'
 sleep 3
 
