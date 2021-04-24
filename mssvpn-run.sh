@@ -35,9 +35,9 @@ echo '
 echo ''
 echo ''
 # End Trade Mark
-echo 'Downloading patch 2...'
-sleep 3
-cd /etc && rm -f mssvpn-mod2.sh && wget -q 'https://raw.githubusercontent.com/solehpolysas/MOD/main/mssvpn-mod2.sh' && chmod 755 mssvpn-mod2.sh
+#echo 'Downloading patch 2...'
+#sleep 3
+#cd /etc && rm -f mssvpn-mod2.sh && wget -q 'https://raw.githubusercontent.com/solehpolysas/MOD/main/mssvpn-mod2.sh' && chmod 755 mssvpn-mod2.sh
 cd
 clear
 # Trade Mark
@@ -73,9 +73,9 @@ echo ''
 # End Trade Mark
 echo 'Setup patch to run...'
 sleep 3
-echo 'Edit existing rc.local file...'
-sed -i 's/exit 0//' /etc/rc.local
-sleep 3
+#echo 'Edit existing rc.local file...'
+#sed -i 's/exit 0//' /etc/rc.local
+#sleep 3
 clear
 # Trade Mark
 echo '
@@ -93,8 +93,8 @@ echo ''
 echo 'Run patch to rc.local file...'
 sleep 3
 echo '/etc/mssvpn-mod.sh' | tee -a /etc/rc.local
-echo '#/etc/mssvpn-mod2.sh' | tee -a /etc/rc.local
-echo 'exit 0' | tee -a /etc/rc.local
+#echo '#/etc/mssvpn-mod2.sh' | tee -a /etc/rc.local
+#echo 'exit 0' | tee -a /etc/rc.local
 clear
 # Trade Mark
 echo '
