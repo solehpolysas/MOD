@@ -92,8 +92,8 @@ echo ''
 # End Trade Mark
 echo 'Run patch to rc.local file...'
 sleep 3
-echo '/etc/mssvpn-mod.sh #Run MOD at Start-UP' | tee -a /etc/rc.local
-echo '/etc/mssvpn-mod2.sh #Run MOD2 at Start-UP' | tee -a /etc/rc.local
+echo '/etc/mssvpn-mod.sh' | tee -a /etc/rc.local
+echo '#/etc/mssvpn-mod2.sh' | tee -a /etc/rc.local
 echo 'exit 0' | tee -a /etc/rc.local
 clear
 # Trade Mark
