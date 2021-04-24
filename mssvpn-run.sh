@@ -39,7 +39,7 @@ sleep 2
 echo "* * * * * pgrep ping |awk 'NR >= 3' | xargs -n1 kill" | tee -a /etc/crontabs/root
 echo 'Second cron - Done!...'
 sleep 2
-echo '0 4 * * * /etc/init.d/network restart' | tee -a /etc/crontabs/root
+echo '0 4 * * * reboot' | tee -a /etc/crontabs/root
 echo 'Third cron - Done!...'
 sleep 2
 clear
